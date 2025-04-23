@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Cliente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Cadastrar Cliente</h2>
+    <form action="cadastro-cliente.html" method="post">
+        <div>
+            <label for="nomeCliente">Nome:</label>
+            <input type="text" id="nomeCliente" name="nome" required>
+        </div>
+        <div>
+            <label for="documentoCliente">Documento:</label>
+            <input type="text" id="documentoCliente" name="documento" required>
+        </div>
+        <button type="submit">Cadastrar Cliente</button>
+    </form>
+
+    <h2>Cadastrar Funcionário</h2>
+    <form action="cadastro-funcionario.html" method="post">
+        <div>
+            <label for="matriculaFuncionario">Matrícula:</label>
+            <input type="text" id="matriculaFuncionario" name="matricula" required>
+        </div>
+        <div>
+            <label for="cargoFuncionario">Cargo:</label>
+            <input type="text" id="cargoFuncionario" name="cargo" required>
+        </div>
+        <button type="submit">Cadastrar Funcionário</button>
+    </form>
+
+    <h2>Cadastrar Veículo</h2>
+    <form action="cadastro-veiculo.html" method="post">
+        <div>
+            <label for="modeloVeiculo">Modelo:</label>
+            <input type="text" id="modeloVeiculo" name="modelo" required>
+        </div>
+        <div>
+            <label for="placaVeiculo">Placa:</label>
+            <input type="text" id="placaVeiculo" name="placa" required>
+        </div>
+        <div>
+            <label for="corVeiculo">Cor:</label>
+            <input type="text" id="corVeiculo" name="cor">
+        </div>
+        <div>
+            <label for="tipoVeiculo">Tipo:</label>
+            <select id="tipoVeiculo" name="tipo">
+                <option value="carro">Carro</option>
+                <option value="moto">Moto</option>
+                <option value="outro">Outro</option>
+            </select>
+        </div>
+        <div>
+            <label for="clienteIdVeiculo">ID do Cliente (Dono):</label>
+            <input type="number" id="clienteIdVeiculo" name="clienteId" required>
+        </div>
+        <button type="submit">Cadastrar Veículo</button>
+    </form>
+
+    <h2>Estacionar Veículo (Entrada)</h2>
+    <form action="entrada.html" method="post">
+        <div>
+            <label for="idEntrada">ID do Registro:</label>
+            <input type="number" id="idEntrada" name="id" required>
+        </div>
+        <div>
+            <label for="veiculoEntrada">Veículo (Placa):</label>
+            <input type="text" id="veiculoEntrada" name="veiculo" placeholder="Digite a placa do veículo" required>
+        </div>
+        <div>
+            <label for="clienteEntrada">Cliente (Documento):</label>
+            <input type="text" id="clienteEntrada" name="cliente" placeholder="Digite o documento do cliente" required>
+        </div>
+        <button type="submit">Registrar Entrada</button>
+    </form>
+
+    <h2>Finalizar Estacionamento (Saída)</h2>
+    <form action="saida.html" method="post">
+        <div>
+            <label for="idSaida">ID do Registro:</label>
+            <input type="number" id="idSaida" name="id" required>
+        </div>
+        <button type="submit">Registrar Saída</button>
+    </form>
+
+    <h2>Listar Registros</h2>
+    <form action="registros.html" method="get">
+        <button type="submit">Listar Registros</button>
+    </form>
+
+    <h2>Lista de Clientes e Veículos</h2>
+    <div id="listaClientesVeiculos"></div>
+
+    <h2>Veículos Atualmente no Estacionamento</h2>
+    <div id="listaVeiculosEstacionados"></div>
+
+    <h2>Registros Finalizados</h2>
+    <div id="listaRegistrosFinalizados"></div>
+
+    
+    
+        <script src="js/models.js"></script>
+        <script src="js/clientes.js"></script>
+        <script src="js/models.js"></script>
+    <script src="js/funcionarios.js"></script>
+    <script src="js/models.js"></script>
+    <script src="js/funcionarios.js"></script>
+    <script src="js/models.js"></script>
+    <script src="js/clientes.js"></script>
+    <script src="js/estacionamento.js"></script>
+    <script src="js/models.js"></script>
+    <script src="js/estacionamento.js"></script>
+    
+        
+        <script type="module" src=""></script>
+</body>
+</html>
